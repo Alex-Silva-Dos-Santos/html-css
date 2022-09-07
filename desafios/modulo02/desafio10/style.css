@@ -1,0 +1,68 @@
+body {
+    background-color: #88E0B0;
+}
+
+header {
+    margin: -21px auto;
+    background-image: linear-gradient(to top, #1E5A3A, #287549, #45CD81);
+    text-align: center;
+    width: 1100px;
+    color: white;
+}
+
+nav#header {
+    text-align: left;
+}
+
+.navHeaderOption{
+    color: white;
+    text-decoration: none;
+}
+
+.navHeaderOption:hover {
+    background-color: rgb(15, 134, 15);
+}
+img#bugdroid{
+    margin: 0px 250px;
+}
+main{
+    box-sizing: border-box;
+    background-color: #88E0B0;
+    margin: auto;
+}
+section {
+
+    width: 50em;
+    background-color: white;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+iframe#video{
+    margin-left: 125px;
+}
+
+p#footer_p {
+    background-color: #39A76A;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}
+article#footerArticle {
+    background-color: #C6EBD7;
+    margin: 0px 18px;
+    padding-bottom: 24px;
+}
+div#rightL {
+    width: 300px;
+    margin-top: -89px;
+    margin-left: 386px;
+}
+p#credits {
+    background-color: #1E5A3A;
+    text-align: center;
+    color: white;
+}
+.listItems {
+    color: black;
+}

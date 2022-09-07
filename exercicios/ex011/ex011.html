@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou amplie o zoom do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="P.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="M.png" type="image/png">
+        <img src="G.png" alt="imagem grande">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em html5</p>
+    <audio preload="metadata" controls loop>
+        <source src="imagems/y2mate.com - Losing You - Copia.mp3" type="audio/mpeg">
+        <source src="y2mate.com - Losing You - Copia.ogg" type="audio/ogg">
+        <source src="y2mate.com - Losing You - Copia.wav" type="audio/wav">
+        <p>infelismente seu navegador não consegue reproduzir o audio <a href="y2mate.com - Losing You - Copia.mp3">clique aqui para baixar o audio</a></p>
+    </audio>
+</body>
+</html>

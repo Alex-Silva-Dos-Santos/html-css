@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+        }
+        main:hover {
+            box-shadow: 5px 3px 7px rgba(9, 12, 214, 0.753);
+        }
+        nav {
+            background-color: rgb(146, 145, 145);
+            padding: 3px;
+            box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.753);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: underline;
+            color: aqua;
+        }
+        article {
+            background-color: lightgray;
+        }
+        footer {
+            background-color: black;
+            color: gray;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#circle {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                    <aside>
+                        
+                    </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o brasil</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Exercitationem, explicabo cumque, quasi provident soluta unde quam ullam eveniet maxime aperiam cum ab 
+                    aut voluptas porro reiciendis odit corporis? Voluptate, velit.
+                </p>
+                <aside>
+                    <p>artigo escrito por zezin</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>todos direitos reservados a industria de bebidas 101 do brasil e a marca redHorse</p>
+    </footer>
+    <div id="circle"></div>
+</body>
+</html>
