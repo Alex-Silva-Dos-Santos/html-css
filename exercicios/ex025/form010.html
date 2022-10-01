@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>oninput="exemplo.innerHTML = Number(exemplo.value) + Number(exemplo2.value)"</h1>
+    <form action="cadastro/cadastro.php">
+        <p>
+            <label for="yearid">em que ano voce nasceu</label>
+            <input type="number" name="year" id="yearid" min="1990" 
+            max="2013" oninput="calcage()">
+        </p>
+        <p>
+            <label for="ageid">Sue idade é</label>
+            <output id="ageid">10</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function calcage() {
+            let atual = new Date().getFullYear()
+            ageid.innerHTML = Number(atual) - Number(yearid.value)
+        }
+    </script>
+</body>
+</html>

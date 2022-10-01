@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/*
+Paleta de cores
+Verde: #49a09d
+lilas: #5f2c82
+*/
+
+* {
+    font-family: apple-system, Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 260px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.496);
+
+    transition: width 0.5s, height 0.5s;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url("../images/Capturar.PNG") no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: left bottom;
+}
+
+section#login > div#Formulario {
+    display: block;
+    padding: 10px;
+}
+
+
+div#Formulario > h1 {
+    text-align: center;
+}
+
+div#Formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.field {
+    display: block;
+    background-color: #5f2c82;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+form > input[type=submit] {
+    display: block;
+    size: 1em;
+    width: 100%;
+    height: 30px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2c5f5d;
+    cursor: pointer;
+}
+
+form > a.button {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #49a09d;
+    color: #2c5f5d;
+    display: block;
+    height: 30px;
+    size: 1em;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 5px;
+}
+
+form > a.button:hover {
+    background-color: #08aca7;
+}
+
+form > a.button > span {
+    font-size: 0.8em;
+}

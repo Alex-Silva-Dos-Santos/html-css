@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/midiaQueries.css">
+</head>
+<body onresize="Resize()">
+    <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="Menuclick()">menu</i>
+        <menu id="Opt">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Midia Quiries</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus tempore molestias officia optio illo 
+                tenetur beatae laboriosam magnam quam quod quis voluptate maiores, consequuntur corrupti quae nostrum itaque, vitae ipsa!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique totam nobis, quam dolores aut ipsa
+                ipsum cum nostrum optio nesciunt maxime nulla. Veniam cupiditate totam omnis recusandae magnam. Velit?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis tempora, consequatur perspiciatis similique 
+                excepturi facere doloremque, harum cum blanditiis deleniti nulla totam ex provident. Eaque dolores rerum odit incidunt est.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique totam nobis, quam dolores aut ipsa
+                ipsum cum nostrum optio nesciunt maxime nulla. Veniam cupiditate totam omnis recusandae magnam. Velit?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique totam nobis, quam dolores aut ipsa
+                ipsum cum nostrum optio nesciunt maxime nulla. Veniam cupiditate totam omnis recusandae magnam. Velit?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique totam nobis, quam dolores aut ipsa
+                ipsum cum nostrum optio nesciunt maxime nulla. Veniam cupiditate totam omnis recusandae magnam. Velit?
+            </p>
+        </article>
+    </main>
+    <script>
+        function Resize() {
+            if (window.innerWidth >= 768) {
+                Opt.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function Menuclick() {
+            if (Opt.style.display == 'block') {
+                Opt.style.display = 'none'
+            }
+            else {
+                Opt.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
