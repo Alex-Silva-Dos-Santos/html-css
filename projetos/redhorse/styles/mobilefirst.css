@@ -1,0 +1,136 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 200px;
+    background: black url("../imagens/avatars-000044515224-8ufzmg-t240x240-removebg-preview.png") no-repeat;
+    background-position: center center;
+    
+}
+
+header section{
+    margin-top: -25px;
+    text-align: right;
+
+}
+
+button {
+    color: white;
+    background-color: transparent;
+    margin: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+
+header > section > button#cart{
+    margin-right: 5px;
+    background-color: green;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+menu {
+    background-color: red;
+    width: 130px;
+    margin-top: -56px;
+    padding-top: 50px;
+    padding-bottom: 63px;
+    display: none;
+    box-shadow: 0px 0px 10px rgb(255, 208, 0);
+    border: 1px solid yellow;
+    border-radius: 5px;
+    animation: none;
+}
+
+main {
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    line-height: 22px;
+}
+
+main > section {
+    display: block;
+    background-color: white;
+    text-align: center;
+    width: 275px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5px;
+   
+}
+
+main > section > img{
+    width: 120px;
+}
+
+
+.main_button {
+    background-color: green;
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px black;
+    
+}
+.product{
+        
+}
+.price {
+    color: green;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+footer > p > a{
+    color: blue;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    background-color: lightgrey;
+    color: black;
+    text-decoration: underline;
+}
+
+@keyframes menu_animation {
+    0%{
+        position: relative;
+        top: -150px;
+    }
+    50%{
+
+    }
+    75%{
+
+    }
+    100%{
+        top: 150px;
+    }
+}
+@keyframes menu_animation_retroced{
+    0%{
+        position: relative;
+        top: 0px;
+    }
+    100%{
+        top: -500px;
+    }
+}
